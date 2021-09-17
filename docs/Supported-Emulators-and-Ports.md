@@ -11,7 +11,10 @@ This is a list of supported systems and the emulators/cores to run them, it will
 Note that because of lack of time, not all of these systems have been thoroughly tested, help is always appreciated if you want to test them and report back!
 
 Every system needs to have the correct folder structure inside the base path (the base ROM path is `/storage/roms`), for example Super Nintendo needs ROMS inside `/storage/roms/snes`. For ports this is usually `/storage/roms/ports/[port]`.
-This path is actually a second partition on your SD card, for more information on how to add your games please refer to this article: Getting-to-Know-351ELEC#adding-games
+
+Note that if you are adding games manually to your microSD card, you will be accessing the `GAMES` partition. This partition directly corresponds to the base ROM path. For example on the microSD card Super Nintendo ROMS need to be in the `/snes` folder in the `GAMES` partition, which corresponds to `/storage/roms/snes`.
+
+For more information on how to add your games please refer to this article: Getting-to-Know-351ELEC#adding-games
 
 You will also find the correct extensions, almost all cores support .zip and .7z files as well as those listed.
 

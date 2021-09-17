@@ -74,6 +74,14 @@ Game crashes are rare, but if you find that you cannot leave an emulator using t
 
 Games may be added by copying them over the network (rsync, sftp), or by moving the microSD card to your PC. It is important to follow the existing directory structure or your games may not be discovered by 351ELEC.  Be sure to always properly eject the microSD or power off the handheld before removing it.
 
+## ROM directory structure
+
+Every system needs to have the correct folder structure inside the base path (the base ROM path is `/storage/roms`), for example Super Nintendo needs ROMS inside `/storage/roms/snes`. For ports this is usually `/storage/roms/ports/[port]`.
+
+If you are adding games manually to your microSD card, you will be accessing the `GAMES` partition. This partition directly corresponds to the base ROM path. For example on the microSD card Super Nintendo ROMS need to be in the `/snes` folder in the `GAMES` partition, which corresponds to `/storage/roms/snes`.
+
+For more information on supported systems and their respective folders in the base ROM path please refer to this article: Supported-Emulators-and-Ports
+
 ## Accessing the handheld over a network
 
 When connected to a network, the handheld listens for connections on port 22 (SSH).  If your local network supports DHCP naming the host should appear on your network as '351ELEC'.
